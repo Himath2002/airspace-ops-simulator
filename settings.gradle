@@ -1,0 +1,3 @@
+rootProject.name = 'airspace-ops-simulator'
+
+include 'comms', 'gui'

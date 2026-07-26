@@ -1,0 +1,26 @@
+plugins {
+    id "application"
+    id "org.openjfx.javafxplugin"
+    id "java-conventions"
+}
+
+application {
+    mainClass = "io.github.himath2002.airspace.app.AirspaceOpsApplication"
+    applicationDefaultJvmArgs = [
+            "--add-opens", "javafx.graphics/javafx.scene=ALL-UNNAMED",
+            "-Xmx512m"
+    ]
+}
+
+javafx {
+    version = "21"
+    modules = [ "javafx.controls" ]
+}
+
+dependencies {
+    implementation project(":comms")
+}
+
+tasks.withType(JavaCompile) {
+    options.compilerArgs << "-Xlint:all,-serial"
+}

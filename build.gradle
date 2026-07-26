@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+    id 'org.openjfx.javafxplugin' version '0.1.0' apply false
+}
+
+allprojects {
+    group = 'io.github.himath2002.airspace'
+    version = '1.0.0'
+}
+
+subprojects {
+    apply plugin: 'pmd'
+
+    pmd {
+        ruleSetFiles = files("${rootProject.projectDir}/config/pmd/ruleset.xml")
+        reportsDir = file("${buildDir}/reports/pmd")
+        ignoreFailures = false
+    }
+}
+
+tasks.named('check') {
+    dependsOn subprojects*.getTasksByName('check', false)
+}

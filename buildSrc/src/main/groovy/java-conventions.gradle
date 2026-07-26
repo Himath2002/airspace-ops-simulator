@@ -1,0 +1,27 @@
+plugins {
+    id "java"
+    id "pmd"
+}
+
+repositories {
+    mavenCentral()
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
+
+pmd {
+    consoleOutput = true
+    toolVersion = "7.15.0"
+    rulesMinimumPriority = 5
+    ruleSetFiles = files("${rootProject.projectDir}/config/pmd/ruleset.xml")
+    reportsDir = file("${buildDir}/reports/pmd")
+}
+
+tasks.withType(JavaCompile) {
+    options.compilerArgs << "-Xlint:all,-serial"
+    options.encoding = "UTF-8"
+}
