@@ -2,6 +2,13 @@
 
 All notable changes to Airspace Ops Simulator are documented here.
 
+## [1.0.1] - 2026-07-27
+
+### Changed
+
+- Updated the Gradle wrapper from 8.14.2 to 9.6.1 after successful local and hosted verification.
+- Normalized the Windows wrapper script to the repository's declared line-ending policy.
+
 ## [1.0.0] - 2026-07-27
 
 ### Added
@@ -16,6 +23,6 @@ All notable changes to Airspace Ops Simulator are documented here.
 ### Changed
 
 - Normalized the codebase under the `io.github.himath2002.airspace` namespace.
-- Replaced submission-oriented naming and commentary with focused engineering documentation.
+- Replaced legacy naming and excessive commentary with focused engineering documentation.
 - Strengthened shutdown handling, queue dispatch, resource validation, and cross-thread state visibility.
 - Applied icon scaling that was previously stored but not reflected by the renderer.

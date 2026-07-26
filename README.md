@@ -6,7 +6,7 @@
   <a href="https://github.com/Himath2002/airspace-ops-simulator/actions/workflows/ci.yml"><img src="https://github.com/Himath2002/airspace-ops-simulator/actions/workflows/ci.yml/badge.svg" alt="Java CI status"></a>
   <img src="https://img.shields.io/badge/Java-21-0E7490?logo=openjdk&logoColor=white" alt="Java 21">
   <img src="https://img.shields.io/badge/JavaFX-21-1685A9" alt="JavaFX 21">
-  <img src="https://img.shields.io/badge/Gradle-8.14-1B4055?logo=gradle&logoColor=white" alt="Gradle 8.14">
+  <img src="https://img.shields.io/badge/Gradle-9.6-1B4055?logo=gradle&logoColor=white" alt="Gradle 9.6">
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-2F855A" alt="MIT License"></a>
 </p>
 
