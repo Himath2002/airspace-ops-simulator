@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="640" viewBox="0 0 1440 640" role="img" aria-labelledby="title desc">
+  <title id="title">Airspace Ops Simulator</title>
+  <desc id="desc">Concurrent airport operations visualized across a live JavaFX grid.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07111f"/>
+      <stop offset="0.58" stop-color="#0b2035"/>
+      <stop offset="1" stop-color="#0f3850"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#48cae4"/>
+      <stop offset="1" stop-color="#90e0ef"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#020817" flood-opacity="0.42"/>
+    </filter>
+    <pattern id="grid" width="52" height="52" patternUnits="userSpaceOnUse">
+      <path d="M 52 0 L 0 0 0 52" fill="none" stroke="#7dd3fc" stroke-opacity="0.11" stroke-width="1"/>
+    </pattern>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#67e8f9"/>
+    </marker>
+  </defs>
+
+  <rect width="1440" height="640" rx="28" fill="url(#background)"/>
+  <circle cx="1320" cy="68" r="190" fill="#22d3ee" opacity="0.06"/>
+  <circle cx="1210" cy="600" r="260" fill="#0ea5e9" opacity="0.07"/>
+
+  <g transform="translate(82 80)">
+    <rect width="292" height="34" rx="17" fill="#103a51" stroke="#38bdf8" stroke-opacity="0.45"/>
+    <text x="146" y="22" text-anchor="middle" fill="#b8ecf5" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="2">JAVA 21 · JAVAFX · CONCURRENCY</text>
+
+    <text x="0" y="116" fill="#f7fbff" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="68" font-weight="800" letter-spacing="-2">Airspace Ops</text>
+    <text x="0" y="184" fill="url(#accent)" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="68" font-weight="800" letter-spacing="-2">Simulator</text>
+
+    <text x="2" y="240" fill="#c2d9e6" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="23">Concurrent airport operations, visible in motion.</text>
+    <text x="2" y="278" fill="#88a9ba" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="17">Request generation · aircraft dispatch · live movement · servicing</text>
+
+    <g transform="translate(0 342)">
+      <rect width="500" height="116" rx="20" fill="#0a1928" stroke="#3b82a0" stroke-opacity="0.5"/>
+      <rect x="22" y="23" width="4" height="70" rx="2" fill="#67e8f9"/>
+      <text x="48" y="48" fill="#87aabd" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="1.8">ENGINEERING FOCUS</text>
+      <text x="48" y="78" fill="#eef9fd" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="20" font-weight="650">Thread-safe queues with a responsive UI boundary</text>
+    </g>
+  </g>
+
+  <g transform="translate(720 70)" filter="url(#shadow)">
+    <rect width="640" height="500" rx="28" fill="#091a2a" stroke="#4fb7d1" stroke-opacity="0.35"/>
+    <rect x="24" y="24" width="592" height="314" rx="20" fill="url(#grid)" stroke="#2b6076" stroke-opacity="0.7"/>
+
+    <path d="M116 258 C210 180, 300 242, 394 130 S520 116, 548 86" fill="none" stroke="#67e8f9" stroke-width="3" stroke-dasharray="8 9" marker-end="url(#arrow)"/>
+    <path d="M142 96 C230 120, 258 180, 360 220 S486 246, 530 278" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-dasharray="7 9" opacity="0.85"/>
+
+    <g transform="translate(96 238)">
+      <circle r="22" fill="#0e7490" stroke="#a5f3fc" stroke-width="3"/>
+      <circle r="7" fill="#ecfeff"/>
+      <text y="43" text-anchor="middle" fill="#d5edf5" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="700">NORTHGATE</text>
+    </g>
+    <g transform="translate(382 120)">
+      <circle r="22" fill="#0e7490" stroke="#a5f3fc" stroke-width="3"/>
+      <circle r="7" fill="#ecfeff"/>
+      <text y="43" text-anchor="middle" fill="#d5edf5" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="700">SUMMIT</text>
+    </g>
+    <g transform="translate(538 278)">
+      <circle r="22" fill="#b45309" stroke="#fde68a" stroke-width="3"/>
+      <circle r="7" fill="#fffbeb"/>
+      <text y="43" text-anchor="middle" fill="#fdecc8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="700">HARBOR</text>
+    </g>
+
+    <g transform="translate(274 177) rotate(-24)">
+      <path d="M0 -15 L8 10 L1 7 L0 18 L-1 7 L-8 10 Z" fill="#ffffff" stroke="#67e8f9" stroke-width="1.5"/>
+    </g>
+
+    <g transform="translate(24 362)">
+      <rect width="180" height="108" rx="18" fill="#10283b" stroke="#27556c"/>
+      <text x="20" y="28" fill="#79a9bd" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="1.4">REQUEST PIPELINE</text>
+      <text x="20" y="70" fill="#f4fbfe" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="32" font-weight="800">ACTIVE</text>
+      <circle cx="153" cy="67" r="8" fill="#34d399"/>
+    </g>
+    <g transform="translate(220 362)">
+      <rect width="180" height="108" rx="18" fill="#10283b" stroke="#27556c"/>
+      <text x="20" y="28" fill="#79a9bd" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="1.4">AIRBORNE</text>
+      <text x="20" y="75" fill="#f4fbfe" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="42" font-weight="800">12</text>
+      <path d="M132 78 L144 47 L151 62 L168 57 L151 71 L157 88 L143 77 Z" fill="#67e8f9"/>
+    </g>
+    <g transform="translate(416 362)">
+      <rect width="200" height="108" rx="18" fill="#10283b" stroke="#27556c"/>
+      <text x="20" y="28" fill="#79a9bd" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="1.4">SERVICING</text>
+      <text x="20" y="75" fill="#f4fbfe" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="42" font-weight="800">05</text>
+      <rect x="146" y="50" width="30" height="28" rx="6" fill="none" stroke="#fbbf24" stroke-width="3"/>
+      <path d="M151 50 V42 H171 V50" fill="none" stroke="#fbbf24" stroke-width="3"/>
+    </g>
+  </g>
+</svg>

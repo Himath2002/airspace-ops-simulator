@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-labelledby="title">
+  <title id="title">Airport marker</title>
+  <defs>
+    <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8be9f3"/>
+      <stop offset="1" stop-color="#20b8d1"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#02141e" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+  <circle cx="128" cy="128" r="102" fill="#082638" stroke="url(#ring)" stroke-width="16" filter="url(#shadow)"/>
+  <circle cx="128" cy="128" r="72" fill="#0d3d51" stroke="#baf5fa" stroke-opacity="0.35" stroke-width="3"/>
+  <rect x="72" y="137" width="112" height="18" rx="7" fill="#e9fdff"/>
+  <rect x="111" y="72" width="34" height="84" rx="8" fill="#e9fdff"/>
+  <rect x="83" y="106" width="90" height="18" rx="7" fill="#e9fdff"/>
+  <path d="M92 95 L128 72 L164 95 Z" fill="#69dce9"/>
+  <circle cx="128" cy="168" r="8" fill="#f4b942"/>
+</svg>

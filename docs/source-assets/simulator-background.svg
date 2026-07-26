@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title">
+  <title id="title">Airspace simulator background</title>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#061522"/>
+      <stop offset="0.55" stop-color="#0a2738"/>
+      <stop offset="1" stop-color="#0f4155"/>
+    </linearGradient>
+    <radialGradient id="glow">
+      <stop offset="0" stop-color="#37d5e7" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#37d5e7" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="microGrid" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M80 0 H0 V80" fill="none" stroke="#8deaf3" stroke-opacity="0.08" stroke-width="2"/>
+      <circle cx="0" cy="0" r="3" fill="#b4f5f9" fill-opacity="0.12"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#background)"/>
+  <rect width="1600" height="1000" fill="url(#microGrid)"/>
+  <circle cx="1320" cy="140" r="520" fill="url(#glow)"/>
+  <circle cx="240" cy="870" r="430" fill="url(#glow)" opacity="0.65"/>
+  <path d="M-60 770 C330 560 500 740 790 520 S1230 290 1690 430" fill="none" stroke="#64deeb" stroke-opacity="0.10" stroke-width="5" stroke-dasharray="18 22"/>
+  <path d="M-100 260 C360 420 580 190 890 360 S1330 720 1690 610" fill="none" stroke="#f4b942" stroke-opacity="0.08" stroke-width="4" stroke-dasharray="14 25"/>
+</svg>

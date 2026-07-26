@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="560" viewBox="0 0 1440 560" role="img" aria-labelledby="title desc">
+  <title id="title">Aircraft operations lifecycle</title>
+  <desc id="desc">A flight request moves through dispatch, flight, servicing, and fleet availability.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f8fbfc"/>
+      <stop offset="1" stop-color="#eaf4f6"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="9" stdDeviation="11" flood-color="#12394a" flood-opacity="0.12"/>
+    </filter>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#138398"/>
+    </marker>
+  </defs>
+
+  <rect width="1440" height="560" rx="28" fill="url(#bg)"/>
+  <text x="72" y="70" fill="#103444" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="35" font-weight="800">From demand to ready aircraft</text>
+  <text x="72" y="104" fill="#52727f" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="17">Every transition has one owner and one explicit queue boundary.</text>
+
+  <path d="M258 294 H306" fill="none" stroke="#138398" stroke-width="4" marker-end="url(#arrow)"/>
+  <path d="M520 294 H568" fill="none" stroke="#138398" stroke-width="4" marker-end="url(#arrow)"/>
+  <path d="M782 294 H830" fill="none" stroke="#138398" stroke-width="4" marker-end="url(#arrow)"/>
+  <path d="M1044 294 H1092" fill="none" stroke="#138398" stroke-width="4" marker-end="url(#arrow)"/>
+
+  <g transform="translate(56 172)" filter="url(#shadow)">
+    <rect width="202" height="244" rx="22" fill="#ffffff" stroke="#bbd4dc"/>
+    <circle cx="101" cy="62" r="28" fill="#dff5f6"/>
+    <path d="M84 62 H118 M101 45 V79" stroke="#137487" stroke-width="4" stroke-linecap="round"/>
+    <text x="101" y="119" text-anchor="middle" fill="#103444" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="20" font-weight="800">Request</text>
+    <text x="101" y="150" text-anchor="middle" fill="#567681" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14">An airport selects</text>
+    <text x="101" y="171" text-anchor="middle" fill="#567681" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14">a destination</text>
+    <rect x="39" y="197" width="124" height="28" rx="14" fill="#edf8fa"/>
+    <text x="101" y="216" text-anchor="middle" fill="#137487" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11" font-weight="750">PRODUCER</text>
+  </g>
+
+  <g transform="translate(318 172)" filter="url(#shadow)">
+    <rect width="202" height="244" rx="22" fill="#ffffff" stroke="#bbd4dc"/>
+    <circle cx="101" cy="62" r="28" fill="#e6f0ff"/>
+    <path d="M86 55 H116 M86 64 H116 M86 73 H108" stroke="#326da8" stroke-width="4" stroke-linecap="round"/>
+    <text x="101" y="119" text-anchor="middle" fill="#103444" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="20" font-weight="800">Dispatch</text>
+    <text x="101" y="150" text-anchor="middle" fill="#567681" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14">A grounded aircraft</text>
+    <text x="101" y="171" text-anchor="middle" fill="#567681" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14">claims the route</text>
+    <rect x="37" y="197" width="128" height="28" rx="14" fill="#eef4fc"/>
+    <text x="101" y="216" text-anchor="middle" fill="#326da8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11" font-weight="750">REQUEST QUEUE</text>
+  </g>
+
+  <g transform="translate(580 172)" filter="url(#shadow)">
+    <rect width="202" height="244" rx="22" fill="#ffffff" stroke="#bbd4dc"/>
+    <circle cx="101" cy="62" r="28" fill="#e2f8fb"/>
+    <path d="M101 39 L110 65 L102 62 L101 85 L100 62 L92 65 Z" fill="#12839a"/>
+    <text x="101" y="119" text-anchor="middle" fill="#103444" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="20" font-weight="800">Fly</text>
+    <text x="101" y="150" text-anchor="middle" fill="#567681" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14">Position advances from</text>
+    <text x="101" y="171" text-anchor="middle" fill="#567681" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14">elapsed time and speed</text>
+    <rect x="36" y="197" width="130" height="28" rx="14" fill="#edf8fa"/>
+    <text x="101" y="216" text-anchor="middle" fill="#12839a" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11" font-weight="750">FLIGHT WORKER</text>
+  </g>
+
+  <g transform="translate(842 172)" filter="url(#shadow)">
+    <rect width="202" height="244" rx="22" fill="#ffffff" stroke="#bbd4dc"/>
+    <circle cx="101" cy="62" r="28" fill="#fff2da"/>
+    <rect x="86" y="53" width="30" height="25" rx="5" fill="none" stroke="#bd7617" stroke-width="3"/>
+    <path d="M91 53 V46 H111 V53" fill="none" stroke="#bd7617" stroke-width="3"/>
+    <text x="101" y="119" text-anchor="middle" fill="#103444" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="20" font-weight="800">Service</text>
+    <text x="101" y="150" text-anchor="middle" fill="#567681" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14">Turnaround completes</text>
+    <text x="101" y="171" text-anchor="middle" fill="#567681" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14">before reassignment</text>
+    <rect x="36" y="197" width="130" height="28" rx="14" fill="#fff7e9"/>
+    <text x="101" y="216" text-anchor="middle" fill="#a86712" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11" font-weight="750">SERVICE QUEUE</text>
+  </g>
+
+  <g transform="translate(1104 172)" filter="url(#shadow)">
+    <rect width="280" height="244" rx="22" fill="#123c4c"/>
+    <circle cx="140" cy="62" r="28" fill="#6ee7f2"/>
+    <path d="M126 62 L136 72 L155 50" fill="none" stroke="#123c4c" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="140" y="119" text-anchor="middle" fill="#f5fcfe" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="20" font-weight="800">Available again</text>
+    <text x="140" y="150" text-anchor="middle" fill="#b5d5dd" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14">The destination airport</text>
+    <text x="140" y="171" text-anchor="middle" fill="#b5d5dd" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14">owns the aircraft</text>
+    <rect x="72" y="197" width="136" height="28" rx="14" fill="#1e5969"/>
+    <text x="140" y="216" text-anchor="middle" fill="#a6f3f7" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11" font-weight="750">PENDING ROUTE NEXT</text>
+  </g>
+</svg>
