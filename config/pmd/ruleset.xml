@@ -17,14 +17,12 @@
     <rule ref="category/java/errorprone.xml/DoNotThrowExceptionInFinally" />
     
     <!-- Catching exception types -->
-    <rule ref="category/java/errorprone.xml/AvoidCatchingThrowable" />
-    <rule ref="category/java/design.xml/AvoidCatchingGenericException" />
-    <rule ref="category/java/errorprone.xml/AvoidCatchingNPE" />
+    <rule ref="category/java/errorprone.xml/AvoidCatchingGenericException" />
     
     <!-- Catch blocks -->
     <rule ref="category/java/errorprone.xml/EmptyCatchBlock" /> 
     <rule ref="category/java/errorprone.xml/AvoidInstanceofChecksInCatchClause" />
-    <rule ref="category/java/errorprone.xml/AvoidLosingExceptionInformation" />
+    <rule ref="category/java/errorprone.xml/UselessPureMethodCall" />
     <rule ref="category/java/bestpractices.xml/AvoidPrintStackTrace" />
     <rule ref="category/java/bestpractices.xml/AvoidReassigningCatchVariables" />
     <rule ref="category/java/bestpractices.xml/PreserveStackTrace"
@@ -119,7 +117,7 @@
         </properties>
     </rule>
     <rule ref="category/java/codestyle.xml/FormalParameterNamingConventions" />
-    <rule ref="category/java/codestyle.xml/GenericsNaming" />
+    <rule ref="category/java/codestyle.xml/TypeParameterNamingConventions" />
     <rule ref="category/java/codestyle.xml/LinguisticNaming" />
     <rule ref="category/java/codestyle.xml/LocalVariableNamingConventions" />
     <rule ref="category/java/codestyle.xml/MethodNamingConventions" />
@@ -148,7 +146,7 @@
     
     <!-- Unusual extra -->
     <rule ref="category/java/errorprone.xml/AvoidCallingFinalize" />
-    <rule ref="category/java/errorprone.xml/DontImportSun" />
+    <rule ref="category/java/errorprone.xml/UnsupportedJdkApiUsage" />
     <rule ref="category/java/errorprone.xml/IdempotentOperations" />
     <rule ref="category/java/codestyle.xml/AvoidDollarSigns" />
     <rule ref="category/java/codestyle.xml/UnnecessaryAnnotationValueElement" />

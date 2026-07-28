@@ -2,6 +2,13 @@
 
 All notable changes to Airspace Ops Simulator are documented here.
 
+## [1.0.2] - 2026-07-28
+
+### Security
+
+- Updated PMD from 7.15.0 to 7.22.0, resolving reported vulnerabilities in
+  the transitive PMD core and Apache Commons Lang tooling dependencies.
+
 ## [1.0.1] - 2026-07-27
 
 ### Changed
