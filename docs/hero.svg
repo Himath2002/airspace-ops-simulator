@@ -40,7 +40,10 @@
       <rect width="500" height="116" rx="20" fill="#0a1928" stroke="#3b82a0" stroke-opacity="0.5"/>
       <rect x="22" y="23" width="4" height="70" rx="2" fill="#67e8f9"/>
       <text x="48" y="48" fill="#87aabd" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="1.8">ENGINEERING FOCUS</text>
-      <text x="48" y="78" fill="#eef9fd" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="20" font-weight="650">Thread-safe queues with a responsive UI boundary</text>
+      <text x="48" y="76" fill="#eef9fd" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="650">
+        <tspan x="48" dy="0">Thread-safe queues with a responsive</tspan>
+        <tspan x="48" dy="24">UI boundary</tspan>
+      </text>
     </g>
   </g>
 
